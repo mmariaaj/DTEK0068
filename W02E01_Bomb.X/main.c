@@ -10,12 +10,12 @@
 #include <util/delay.h>
 #include <avr/interrupt.h>
 
-volatile uint16_t g_wire;
+volatile uint16_t g_running;
 
 //implement interrupt
 ISR(PORTA_PORT_vect)
 {
-    g_wire = PORTA.DIRCLR;
+    g_running = PORTA.DIRCLR;
 }
 
 
