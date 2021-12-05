@@ -21,7 +21,7 @@
 #include "task.h"
 #include "queue.h"
 
-//defining baud rate and queue delay
+//defining baud rate
 #define USART0_BAUD_RATE(BAUD_RATE) ((float)(F_CPU * 64 / (16 *(float)BAUD_RATE)) + 0.5)
 
 //length variables for both message and point queues
